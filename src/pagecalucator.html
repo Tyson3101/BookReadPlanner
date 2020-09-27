@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Read Planner</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <div>
+          <h1 class="Title">Read Planner</h1>
+     </div>
+     <div>
+          <h4 class="OtherPageDisplay">
+               Show Schedule
+               <button class="OtherPageDisplayButton" name="ScheduleHTML" id="ScheduleHTML" onclick="ScheduleHTML()"
+                    value="Schedule">Schedule</button>
+          </h4>
+     </div>
+     <div class="Input">
+          <h1>Input</h1>
+          <form action="">
+               <div>
+                    <label for="PageCount">Page Count:</label>
+                    <input type="text" class="InputText" name="PageCount" id="PageCount" required>
+               </div>
+               <div>
+                    <label for="DaysToRead">Days To Read:</label>
+                    <input type="text" class="InputText" name="DaysToRead" id="DaysToRead" required>
+               </div>
+               <div>
+                    <h3>Pages to read a day:</h3>
+                    <h5 id="OutPutDay"></h5>
+               </div>
+               <input type="button" class="ButtonSumbit" onclick="calculate()" value="Calculate">
+     </div>
+     </form>
+     </div>
+     <div>
+          <button onclick="home()">Home</button>
+     </div>
+     <script defer src="./javascript/pagecalucator.js"></script>
+     <script defer src="./javascript/all/getElement.js"></script>
+     <script defer src="./javascript/index.js"></script>
+</body>
+
+</html>

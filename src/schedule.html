@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Read Planner</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <div>
+          <h1 class="Title">Read Planner</h1>
+     </div>
+     <h4 class="OtherPageDisplay">
+          Calculate Pages a day
+          <button class="OtherPageDisplayButton" name="calulatorHTML" id="calulatorHTML" onclick="calulatorHTML()"
+               value="Schedule">Pages a day</button>
+     </h4>
+     <div class="Input">
+          <h1>Input</h1>
+          <form action="">
+               <div>
+                    <label for="PageCount">Page Count:</label>
+                    <input type="text" class="InputText" name="PageCount" id="PageCount" required>
+               </div>
+               <div>
+                    <label for="DaysToRead">Days To Read:</label>
+                    <input type="text" class="InputText" name="DaysToRead" id="DaysToRead" required>
+               </div>
+               <div>
+                    <label for="PagesADay">Pages to read a day:</label>
+                    <input type="text" class="InputText" name="PagesADay" id="PagesADay" required>
+               </div>
+               <div>
+                    <h3>Schedule:</h3>
+                    <p id="Schedule"></p>
+               </div>
+               <input type="button" class="ButtonSumbit" onclick="calculate()" value="Calculate">
+     </div>
+     </form>
+     </div>
+     <button onclick="home()">Home</button>
+     <script defer src="./javascript/schedule.js"></script>
+     <script defer src="./javascript/all/getElement.js"></script>
+     <script defer src="./javascript/index.js"></script>
+</body>
+
+</html>
